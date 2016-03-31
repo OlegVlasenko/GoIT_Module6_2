@@ -37,8 +37,7 @@ public class Shop {
         Map<InstrumentsType,Integer> inv = new HashMap<>();
         for (MusicInstrument item:instruments){
             if (inv.containsKey(item.getType())){
-                Integer cur = inv.get(item.getType());
-                inv.replace(item.getType(), ++cur);
+                inv.replace(item.getType(), inv.get(item.getType()) + 1);
             }else {
                 inv.put(item.getType(), 1);
             }
