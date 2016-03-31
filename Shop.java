@@ -75,8 +75,8 @@ public class Shop {
         return result;
     }
 
-    public void removeInstruments(List<MusicInstrument> listRoBeRemoved){
-        for (MusicInstrument item: listRoBeRemoved ) {
+    public void removeInstruments(List<MusicInstrument> listToBeRemoved){
+        for (MusicInstrument item: listToBeRemoved ) {
             instruments.remove(item);
         }
     }
