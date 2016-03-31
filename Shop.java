@@ -56,6 +56,9 @@ public class Shop {
             String instrumentType = orderEntry.getKey();
             Integer orderQuantity = orderEntry.getValue();
 
+            if (orderQuantity <= 0)
+                throw new IllegalArgumentException("Wrong order quantity " + orderQuantity);
+
             Integer instrumentsToBeRemoved = 0;
             for (MusicInstrument instrument: instruments ) {
                 if( instrument.getType().toString().equals(instrumentType) && instrumentsToBeRemoved < orderQuantity ) {

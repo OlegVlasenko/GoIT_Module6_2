@@ -22,7 +22,7 @@ public class Main {
         Map <String, Integer> order;
         order = new HashMap<>();
 
-        order.put("GUITAR", 2);
+        order.put("GUITAR", 3);//-5,100
         order.put("PIANO", 2);
         order.put("TRUMPET", 6);
         //order.put("VIOLIN", 6);
